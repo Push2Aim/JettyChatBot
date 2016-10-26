@@ -1,9 +1,10 @@
 package adapters;
 
+import com.google.gson.Gson;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import javax.servlet.ServletRequest;
+import java.io.BufferedReader;
 import java.io.IOException;
 
 public class Json extends JSONObject {
@@ -11,21 +12,36 @@ public class Json extends JSONObject {
      super(source);
     }
 
-    public static Json build(ServletRequest request)
+    Json() {
+    }
+
+    public static Json parsReader(BufferedReader reader)
             throws IOException,JSONException {
+        Json out = new Json();
         try {
-            return new Json(requestToBuffer(request).toString());
+            return new Json(out.bufferedReaderToStringBuffer(reader).toString());
         } catch (JSONException e) {
             throw new JSONException ("Error parsing JSON form request string");
         }
     }
 
-    private static StringBuffer requestToBuffer(ServletRequest request) throws IOException {
-        StringBuffer buffer = new StringBuffer();
-        String line;
-        while ((line = request.getReader().readLine()) != null) {
-            buffer.append(line);
-        }
-        return buffer;
+    static String toJson(Object source) {
+        Gson g = new Gson();
+        return g.toJson(source);
     }
+
+    StringBuffer bufferedReaderToStringBuffer(BufferedReader reader) throws IOException {
+        StringBuffer stringBuffer = new StringBuffer();
+        String line;
+        while ((line = readLine(reader)) != null) {
+            stringBuffer.append(line);
+        }
+        return stringBuffer;
+    }
+
+    protected String readLine(BufferedReader reader) throws IOException {
+        if (reader == null) return null;
+        return reader.readLine();
+    }
+
 }
