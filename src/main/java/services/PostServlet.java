@@ -8,13 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+
 public class PostServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         System.out.println("POST content: " + request.getContentType());
-        Json json = Json.build(request);
+        Json json = Json.parsReader(request.getReader());
         System.out.println("POST request: " + json.toString());
 
+        //Object resp = new Boundary().addAssetinteractor(new AddAssetRequest(json));
 
         response.setContentType("application/json");
         response.setStatus(HttpServletResponse.SC_OK);
