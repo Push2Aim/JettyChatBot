@@ -8,7 +8,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 
 public class Json extends JSONObject {
-    private Json(String source) {
+    public Json(String source) {
      super(source);
     }
 
@@ -25,7 +25,7 @@ public class Json extends JSONObject {
         }
     }
 
-    static String toJson(Object source) {
+    public static String toJson(Object source) {
         Gson g = new Gson();
         return g.toJson(source);
     }
