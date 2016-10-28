@@ -3,7 +3,6 @@ package services;
 import adapters.Json;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class PostServletTest {
@@ -16,13 +15,17 @@ public class PostServletTest {
 
 
     @Test
-    @Ignore
     public void processRequest_givenRequestWorkout_returnsWorkoutPlan() throws Exception {
-        Assert.assertEquals(getExpectedJson(), test.processRequest(getInputJson()));
+        Object actual = test.processRequest(getInputJson());
+        Assert.assertEquals(getExpectedJson(), Json.toJson(actual));
     }
 
-    private Object getExpectedJson() {
-        return null;
+    private String getExpectedJson() {
+        return ("{\n" +
+                "  \"speech\": \"speech\",\n" +
+                "  \"displayText\": \"displayText\",\n" +
+                "  \"source\": \"JettyChatBot\"\n" +
+                "}").replace("\n", "").replace(" ", "");
     }
 
     private Json getInputJson() {
