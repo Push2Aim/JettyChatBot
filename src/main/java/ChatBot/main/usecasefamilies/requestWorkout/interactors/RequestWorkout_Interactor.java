@@ -14,6 +14,7 @@ public class RequestWorkout_Interactor implements Usecase<RequestWorkout_Request
 
     private class WorkoutGenerator {
         public WorkoutGenerator(RequestWorkout_Request request) {
+
         }
     }
 }
