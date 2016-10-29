@@ -56,7 +56,9 @@ public class PostServletTest {
                 "      \"webhookUsed\": \"true\",\n" +
                 "      \"intentName\": \"I got x minutes what should I do\"\n" +
                 "    },\n" +
-                "    \"fulfillment\": {},\n" +
+                "    \"fulfillment\": {\n" +
+                "      \"speech\": \"This will be fun:\"\n" +
+                "    },\n" +
                 "    \"score\": 0.92\n" +
                 "  },\n" +
                 "  \"status\": {\n" +
@@ -64,7 +66,7 @@ public class PostServletTest {
                 "    \"errorType\": \"success\"\n" +
                 "  },\n" +
                 "  \"sessionId\": \"5e38aa19-7ec2-4546-a07a-35369d95b298\"\n" +
-                "}");
+                "}\n");
     }
 
 
