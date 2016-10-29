@@ -21,11 +21,11 @@ public class PostServletTest {
     }
 
     private String getExpectedJson() {
-        return ("{\n" +
-                "  \"speech\": \"speech\",\n" +
-                "  \"displayText\": \"displayText\",\n" +
-                "  \"source\": \"JettyChatBot\"\n" +
-                "}").replace("\n", "").replace(" ", "");
+        return ("{" +
+                "\"speech\":\"This will be fun:\"," +
+                "\"displayText\":\"displayText\"," +
+                "\"source\":\"JettyChatBot\"" +
+                "}");
     }
 
     private Json getInputJson() {

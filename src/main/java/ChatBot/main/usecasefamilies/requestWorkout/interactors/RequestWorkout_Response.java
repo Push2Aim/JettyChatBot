@@ -1,8 +1,20 @@
 package ChatBot.main.usecasefamilies.requestWorkout.interactors;
 
+/**
+ * NAME 	    TYPE	                    DESCRIPTION
+ * speech         String                      Voice response to the request.
+ * displayText    String                      Text displayed on the user device screen.
+ * data           Dictionary of objects       Additional data required for performing the action on the client side. The data is sent to the client in the original form and is not processed by Api.ai.
+ * source         String                      Data source.
+ * contextOut     Array of context objects    Array of context objects set after intent completion.
+ * Example:
+ * "contextOut": [{"name":"weather", "lifespan":2, "parameters":{"city":"Rome"}}]
+ */
 public class RequestWorkout_Response {
     String speech;
     String displayText;
+    Object data;
+    Object contextOut;
     String source = "JettyChatBot";
 
     public RequestWorkout_Response(String speech, String displayText) {
@@ -11,28 +23,3 @@ public class RequestWorkout_Response {
     }
 
 }
-/*
-if (requestBody.result) {
-                speech = '';
-
-                if (requestBody.sessionId) {
-                    thisSessionId = requestBody.sessionId;
-                }
-
-                if (requestBody.result.fulfillment) {
-                    speech += requestBody.result.fulfillment.speech;
-                    speech += ' ';
-                }
-
-                if (requestBody.result.action === "generateWorkout") {
-                    speech += generateWorkout(parsDuration(requestBody.result.parameters.duration), parsLocation(requestBody.result.parameters.location));
-                }
-
-                else if (requestBody.result.action)
-                    speech += 'action: ' + requestBody.result.action;
-
-
-speech: speech,
-            displayText: speech,
-            source: 'apiai-webhook-sample'
- */

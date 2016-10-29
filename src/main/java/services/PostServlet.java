@@ -26,13 +26,13 @@ public class PostServlet extends HttpServlet {
 
     Object processRequest(Json json) {
         RequestWorkout_UseCase boundary = new Boundary();
-        return boundary.requestWorkout(new RequestWorkout_Request(json.toMap()));
+        return boundary.requestWorkout(new RequestWorkout_Request(json));
     }
 
     private Json receiveRequest(HttpServletRequest request) throws IOException {
         System.out.println("POST content: " + request.getContentType());
         Json json = Json.parsReader(request.getReader());
-        System.out.println("POST request: " + json.toString());
+        System.out.println("POST request: " + json.toString().replace(",", ",\n").replace("{", "{\n\t"));
         return json;
     }
 
