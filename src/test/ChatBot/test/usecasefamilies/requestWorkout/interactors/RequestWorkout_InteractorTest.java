@@ -5,10 +5,12 @@ import ChatBot.main.usecasefamilies.requestWorkout.interactors.RequestWorkout_Re
 import ChatBot.main.usecasefamilies.requestWorkout.interactors.RequestWorkout_Response;
 import com.google.gson.Gson;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.jusecase.UsecaseTest;
 import org.jusecase.builders.Builder;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 import static org.jusecase.Builders.a;
@@ -28,8 +30,7 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
 
 
     @Test
-    @Ignore
-    public void requestWithTradeInformation() { //TODO
+    public void requestWithTradeInformation() {
         givenRequest(a(request()));
         whenRequestIsExecuted();
 
@@ -46,7 +47,13 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
 
     private static class RequestBuilder implements Builder<RequestWorkout_Request> {
         private RequestWorkout_Request RequestWorkout_Request =
-                new RequestWorkout_Request(null);//TODO
+                new RequestWorkout_Request(getRequestBody());
+
+        private Map<String, Object> getRequestBody() {
+            HashMap<String, Object> requestBody = new HashMap<String, Object>();
+            requestBody.put("sessionId", "5e38aa19-7ec2-4546-a07a-35369d95b298");
+            return requestBody;
+        }
 
         public RequestWorkout_Request build() {
             return RequestWorkout_Request;
@@ -55,7 +62,7 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
 
     private class ResponseBuilder implements Builder<RequestWorkout_Response> {
         private RequestWorkout_Response requestWorkoutResponse =
-                new RequestWorkout_Response("speech", "text");//TODO
+                new RequestWorkout_Response("speech", "displayText");
 
         public RequestWorkout_Response build() {
             return requestWorkoutResponse;
