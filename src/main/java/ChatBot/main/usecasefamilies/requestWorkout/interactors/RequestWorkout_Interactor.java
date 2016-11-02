@@ -1,7 +1,13 @@
 package ChatBot.main.usecasefamilies.requestWorkout.interactors;
 
+import ChatBot.JsonFiles;
+import adapters.Json;
+import org.json.JSONObject;
 import org.jusecase.Usecase;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.Map;
 
 public class RequestWorkout_Interactor implements Usecase<RequestWorkout_Request, RequestWorkout_Response> {
@@ -28,9 +34,36 @@ public class RequestWorkout_Interactor implements Usecase<RequestWorkout_Request
             String location = String.valueOf(parameters.get("location"));
             Map<String, String> duration = (Map<String, String>) parameters.get("duration");
 
-            String out = "";
+            JSONObject details = new Json(JsonFiles.get("details.json"));
+            JSONObject workouts = new Json(JsonFiles.get("workout.json"));
 
-            return out;
+            return printDetails(location, details);
+        }
+
+        private String printDetails(String location, JSONObject details) {
+            JSONObject atLocation = (JSONObject) details.get(location);
+            String description = (String) atLocation.get("description");
+            System.out.println(description);
+            return "\n" + description;
+        }
+
+        private Json readFile(String filePath) {
+            Json jsonObject = null;
+            try {
+                File file = new File(filePath);
+                if (!file.exists()) {
+                    System.err.println("File not exists: " + file.getAbsolutePath());
+                    System.err.println("File not exists: " + file.getCanonicalPath());
+                    System.err.println("File not exists: " + file.getPath());
+                } else {
+                    jsonObject = Json.parsReader(new BufferedReader(new FileReader(file)));
+                }
+            } catch (Exception e) {
+                System.err.println(e.getMessage());
+            }
+
+            return jsonObject;
+
         }
     }
 }

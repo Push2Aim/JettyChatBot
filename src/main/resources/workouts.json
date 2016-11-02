@@ -1,0 +1,1984 @@
+{
+  "workouts": [
+    {
+      "locations": "home",
+      "duration": 5,
+      "warmup": {
+        "time": "2 mins Warmup",
+        "exercises": [
+          {
+            "name": "1 minute Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "1 minute Stretching",
+            "link": "http://bit.ly/2cjLTke"
+          }
+        ]
+      },
+      "workout": {
+        "time": "3 mins AMRAP",
+        "exercises": [
+          {
+            "name": "5 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "5 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Sit-Ups",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "home",
+      "duration": 10,
+      "warmup": {
+        "time": "3 mins warmup",
+        "exercises": [
+          {
+            "name": "1 minute Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "2 minutes Stretching",
+            "link": "http://bit.ly/2c6DtQS"
+          }
+        ]
+      },
+      "workout": {
+        "time": "7 mins AMRAP",
+        "exercises": [
+          {
+            "name": "7 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "7 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "home",
+      "duration": 15,
+      "warmup": {
+        "time": "5 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "3 minutes Stretching",
+            "link": "http://bit.ly/2cA9gKH"
+          }
+        ]
+      },
+      "workout": {
+        "time": "10 mins AMRAP",
+        "exercises": [
+          {
+            "name": "15 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "home",
+      "duration": 20,
+      "warmup": {
+        "time": "7 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "5 minutes Stretching",
+            "link": "http://bit.ly/2cSsQi5"
+          }
+        ]
+      },
+      "workout": {
+        "time": "13 mins AMRAP",
+        "exercises": [
+          {
+            "name": "15 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "home",
+      "duration": 25,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "15 mins AMRAP",
+        "exercises": [
+          {
+            "name": "15 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "home",
+      "duration": 30,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "20 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "home",
+      "duration": 35,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "25 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "home",
+      "duration": 40,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "home",
+      "duration": 45,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      },
+      "cooldown": {
+        "time": "5 mins Cool Down",
+        "exercises": [
+          {
+            "name": "1 minute 30 seconds Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "1 minute 30 seconds Walking in Place",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "home",
+      "duration": 50,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      },
+      "cooldown": {
+        "time": "10 mins Cool Down",
+        "exercises": [
+          {
+            "name": "1 minute 30 seconds Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "1 minute 30 seconds Walking in Place",
+            "link": ""
+          },
+          {
+            "name": "Cool Down Stretch",
+            "link": "http://bit.ly/2cSsQi5"
+          }
+        ]
+      }
+    },
+    {
+      "locations": "home",
+      "duration": 55,
+      "warmup": {
+        "time": "13 mins Warmup",
+        "exercises": [
+          {
+            "name": "1 minute Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "1 minute Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ],
+        "cooldown": {
+          "time": "12 mins Cool Down",
+          "exercises": [
+            {
+              "name": "1 minute Jumping Jack",
+              "link": ""
+            },
+            {
+              "name": "1 minute Walking in Place",
+              "link": ""
+            },
+            {
+              "name": "1 minute Jumping Jack",
+              "link": ""
+            },
+            {
+              "name": "1 minute Walking in Place",
+              "link": ""
+            },
+            {
+              "name": "Cool Down Stretch",
+              "link": "http://bit.ly/2cSsQi5"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "locations": "home",
+      "duration": 60,
+      "warmup": {
+        "time": "15 mins Warmup",
+        "exercises": [
+          {
+            "name": "1 minute Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "1 minute Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      },
+      "cooldown": {
+        "time": "15 mins Cool Down",
+        "exercises": [
+          {
+            "name": "1 minute Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "1 minute Walking in Place",
+            "link": ""
+          },
+          {
+            "name": "1 minute Jumping Jack",
+            "link": ""
+          },
+          {
+            "name": "1 minute Walking in Place",
+            "link": ""
+          },
+          {
+            "name": "Cool Down Stretch",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 5,
+      "warmup": {
+        "time": "2 mins Warmup",
+        "exercises": [
+          {
+            "name": "1 minute Running",
+            "link": ""
+          },
+          {
+            "name": "1 minute Stretching",
+            "link": "http://bit.ly/2cjLTke"
+          }
+        ]
+      },
+      "workout": {
+        "time": "3 mins AMRAP",
+        "exercises": [
+          {
+            "name": "5 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "5 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Sit-Ups",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 10,
+      "warmup": {
+        "time": "3 mins Warmup",
+        "exercises": [
+          {
+            "name": "1 minute Running",
+            "link": ""
+          },
+          {
+            "name": "2 minutes Stretching",
+            "link": "http://bit.ly/2c6DtQS"
+          }
+        ]
+      },
+      "workout": {
+        "time": "7 mins AMRAP",
+        "exercises": [
+          {
+            "name": "7 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "7 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 15,
+      "warmup": {
+        "time": "5 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Running",
+            "link": ""
+          },
+          {
+            "name": "3 minutes Stretching",
+            "link": "http://bit.ly/2cA9gKH"
+          }
+        ]
+      },
+      "workout": {
+        "time": "10 mins AMRAP",
+        "exercises": [
+          {
+            "name": "15 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 20,
+      "warmup": {
+        "time": "7 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Running",
+            "link": ""
+          },
+          {
+            "name": "5 minutes Stretching",
+            "link": "http://bit.ly/2cSsQi5"
+          }
+        ]
+      },
+      "workout": {
+        "time": "13 mins AMRAP",
+        "exercises": [
+          {
+            "name": "15 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 25,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Running",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "15 mins AMRAP",
+        "exercises": [
+          {
+            "name": "15 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 30,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Running",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "20 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 35,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Running",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "25 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 40,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Running",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 45,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Running",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      },
+      "cooldown": {
+        "time": "5 mins Cool Down",
+        "exercises": [
+          {
+            "name": "1 minute 30 seconds Running",
+            "link": ""
+          },
+          {
+            "name": "1 minute 30 seconds Walking",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 50,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Running",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      },
+      "cooldown": {
+        "time": "10 mins Cool Down",
+        "exercises": [
+          {
+            "name": "1 minute 30 seconds Running",
+            "link": ""
+          },
+          {
+            "name": "1 minute 30 seconds Walking",
+            "link": ""
+          },
+          {
+            "name": "Cool Down Stretch",
+            "link": "http://bit.ly/2cSsQi5"
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 55,
+      "warmup": {
+        "time": "13 mins Warmup",
+        "exercises": [
+          {
+            "name": "1 minute Running",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "1 minute Running",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      },
+      "cooldown": {
+        "time": "12 mins Cool Down",
+        "exercises": [
+          {
+            "name": "1 minute Running",
+            "link": ""
+          },
+          {
+            "name": "1 minute Walking",
+            "link": ""
+          },
+          {
+            "name": "1 minute Running",
+            "link": ""
+          },
+          {
+            "name": "1 minute Walking",
+            "link": ""
+          },
+          {
+            "name": "Cool Down Stretch",
+            "link": "http://bit.ly/2cSsQi5"
+          }
+        ]
+      }
+    },
+    {
+      "locations": "outdoor",
+      "duration": 60,
+      "warmup": {
+        "time": "15 mins Warmup",
+        "exercises": [
+          {
+            "name": "1 minute Running",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "1 minute Running",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Dips",
+            "link": ""
+          },
+          {
+            "name": "12 Air Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Push-Ups",
+            "link": ""
+          },
+          {
+            "name": "7 Sit-Ups",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      },
+      "cooldown": {
+        "time": "15 mins Cool Down",
+        "exercises": [
+          {
+            "name": "1 minute Running",
+            "link": ""
+          },
+          {
+            "name": "1 minute Walking",
+            "link": ""
+          },
+          {
+            "name": "1 minute Running",
+            "link": ""
+          },
+          {
+            "name": "1 minute Walking",
+            "link": ""
+          },
+          {
+            "name": "Cool Down Stretch",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": 5,
+      "warmup": {
+        "time": "2 mins Warmup",
+        "exercises": [
+          {
+            "name": "1 minute Rower",
+            "link": ""
+          },
+          {
+            "name": "1 minute Stretching",
+            "link": "http://bit.ly/2cjLTke"
+          }
+        ]
+      },
+      "workout": {
+        "time": "3 mins AMRAP",
+        "exercises": [
+          {
+            "name": "5 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "5 Squats",
+            "link": ""
+          },
+          {
+            "name": "5 Leg Raises",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": 10,
+      "warmup": {
+        "time": "3 mins Warmup",
+        "exercises": [
+          {
+            "name": "1 minute Rower",
+            "link": ""
+          },
+          {
+            "name": "2 minutes Stretching",
+            "link": "http://bit.ly/2c6DtQS"
+          }
+        ]
+      },
+      "workout": {
+        "time": "7 mins AMRAP",
+        "exercises": [
+          {
+            "name": "7 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "7 Squats",
+            "link": ""
+          },
+          {
+            "name": "7 Leg Raises",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": 15,
+      "warmup": {
+        "time": "5 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Rower",
+            "link": ""
+          },
+          {
+            "name": "3 minutes Stretching",
+            "link": "http://bit.ly/2cA9gKH"
+          }
+        ]
+      },
+      "workout": {
+        "time": "10 mins AMRAP",
+        "exercises": [
+          {
+            "name": "10 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "10 Squats",
+            "link": ""
+          },
+          {
+            "name": "10 Dumbbell Shoulder Presses",
+            "link": ""
+          },
+          {
+            "name": "10 Leg Raises",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": 20,
+      "warmup": {
+        "time": "7 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Rower",
+            "link": ""
+          },
+          {
+            "name": "5 minutes Stretching",
+            "link": "http://bit.ly/2cSsQi5"
+          }
+        ]
+      },
+      "workout": {
+        "time": "13 mins AMRAP",
+        "exercises": [
+          {
+            "name": "15 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "12 Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Dumbbell Shoulder Presses",
+            "link": ""
+          },
+          {
+            "name": "7 Leg Raises",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": 25,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Rower",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "15 mins AMRAP",
+        "exercises": [
+          {
+            "name": "15 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "12 Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Dumbbell Shoulder Presses",
+            "link": ""
+          },
+          {
+            "name": "7 Leg Raises",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": 30,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Rower",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "20 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "12 Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Dumbbell Shoulder Presses",
+            "link": ""
+          },
+          {
+            "name": "7 Leg Raises",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": 35,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Rower",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "25 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "12 Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Dumbbell Shoulder Presses",
+            "link": ""
+          },
+          {
+            "name": "7 Leg Raises",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": "40 mins Warmup",
+      "warmup": {
+        "time": 10,
+        "exercises": [
+          {
+            "name": "2 minutes Rower",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "12 Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Dumbbell Shoulder Presses",
+            "link": ""
+          },
+          {
+            "name": "7 Leg Raises",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": 45,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Rower",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "12 Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Dumbbell Shoulder Presses",
+            "link": ""
+          },
+          {
+            "name": "7 Leg Raises",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      },
+      "cooldown": {
+        "time": "5 mins Cool Down",
+        "exercises": [
+          {
+            "name": "1 minute 30 seconds Rower",
+            "link": ""
+          },
+          {
+            "name": "1 minute 30 seconds Walking in Place",
+            "link": ""
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": 50,
+      "warmup": {
+        "time": "10 mins Warmup",
+        "exercises": [
+          {
+            "name": "2 minutes Rower",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "12 Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Dumbbell Shoulder Presses",
+            "link": ""
+          },
+          {
+            "name": "7 Leg Raises",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      },
+      "cooldown": {
+        "time": "10 mins Cool Down",
+        "exercises": [
+          {
+            "name": "1 minute 30 seconds Rower",
+            "link": ""
+          },
+          {
+            "name": "1 minute 30 seconds Walking in Place",
+            "link": ""
+          },
+          {
+            "name": "Cool Down Stretch",
+            "link": "http://bit.ly/2cSsQi5"
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": 55,
+      "warmup": {
+        "time": "13 mins Warmup",
+        "exercises": [
+          {
+            "name": "1 minute Rower",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "1 minute Rower",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "12 Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Dumbbell Shoulder Presses",
+            "link": ""
+          },
+          {
+            "name": "7 Leg Raises",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      },
+      "cooldown": {
+        "time": "12 mins Cool Down",
+        "exercises": [
+          {
+            "name": "1 minute Rower",
+            "link": ""
+          },
+          {
+            "name": "1 minute Walking in Place",
+            "link": ""
+          },
+          {
+            "name": "1 minute Rower",
+            "link": ""
+          },
+          {
+            "name": "1 minute Walking in Place",
+            "link": ""
+          },
+          {
+            "name": "Cool Down Stretch",
+            "link": "http://bit.ly/2cSsQi5"
+          }
+        ]
+      }
+    },
+    {
+      "locations": "gym",
+      "duration": 60,
+      "warmup": {
+        "time": "15 mins Warmup",
+        "exercises": [
+          {
+            "name": "1 minute Rower",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "1 minute Rower",
+            "link": ""
+          },
+          {
+            "name": "15 Burpees",
+            "link": ""
+          },
+          {
+            "name": "Stretching",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      },
+      "workout": {
+        "time": "30 mins AMRAP",
+        "exercises": [
+          {
+            "name": "20 Mountain Climbers (per leg)",
+            "link": ""
+          },
+          {
+            "name": "15 Bench Presses",
+            "link": ""
+          },
+          {
+            "name": "12 Squats",
+            "link": ""
+          },
+          {
+            "name": "9 Dumbbell Shoulder Presses",
+            "link": ""
+          },
+          {
+            "name": "7 Leg Raises",
+            "link": ""
+          },
+          {
+            "name": "5 Squat Jumps",
+            "link": ""
+          },
+          {
+            "name": "3 Burpees",
+            "link": ""
+          }
+        ]
+      },
+      "cooldown": {
+        "time": "15 mins Cool Down",
+        "exercises": [
+          {
+            "name": "1 minute Rower",
+            "link": ""
+          },
+          {
+            "name": "1 minute Walking in Place",
+            "link": ""
+          },
+          {
+            "name": "1 minute Rower",
+            "link": ""
+          },
+          {
+            "name": "1 minute Walking in Place",
+            "link": ""
+          },
+          {
+            "name": "Cool Down Stretch",
+            "link": "http://bit.ly/2cA9txv"
+          }
+        ]
+      }
+    }
+  ]
+}
