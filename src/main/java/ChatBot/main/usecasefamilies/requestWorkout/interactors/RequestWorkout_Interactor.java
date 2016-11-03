@@ -43,7 +43,6 @@ public class RequestWorkout_Interactor implements Usecase<RequestWorkout_Request
         private String printDetails(String location, JSONObject details) {
             JSONObject atLocation = (JSONObject) details.get(location);
             String description = (String) atLocation.get("description");
-            System.out.println(description);
             return "\n" + description;
         }
 
