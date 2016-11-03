@@ -1,6 +1,6 @@
 <html>
 <body>
-<img src="https://github.com/Push2Aim/JettyChatBot/blob/master/HeyBuddy_new_Logo.png?raw=true">
+<img src="WEB-INF/HeyBuddy_new_Logo.png">
 <h2>Hey Buddy!</h2>
 <iframe
         width="350"
