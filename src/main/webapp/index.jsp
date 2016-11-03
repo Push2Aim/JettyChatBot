@@ -1,10 +1,12 @@
 <html>
 <body>
-<img
-        width="350"
-        height="auto"
-        src="https://raw.githubusercontent.com/Push2Aim/JettyChatBot/master/src/main/webapp/WEB-INF/HeyBuddy_new_Logo.png">
-<h2></h2>
+<h2>
+    <img
+            width="350"
+            height="auto"
+            src="https://raw.githubusercontent.com/Push2Aim/JettyChatBot/master/src/main/webapp/WEB-INF/HeyBuddy_new_Logo.png">
+</h2>
+
 <iframe
         width="350"
         height="430"
