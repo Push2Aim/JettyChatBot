@@ -3,7 +3,7 @@
 <div align="center">
     <h2>
         <img
-                width="100%"
+                width="60%"
                 height="auto"
                 src="https://raw.githubusercontent.com/Push2Aim/JettyChatBot/master/src/main/webapp/WEB-INF/HeyBuddy_new_Logo.png">
     </h2>
