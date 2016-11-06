@@ -3,7 +3,6 @@ package services;
 import adapters.Json;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class PostServletTest {
@@ -16,7 +15,6 @@ public class PostServletTest {
 
 
     @Test
-    @Ignore
     public void processRequest_givenRequestWorkout_returnsWorkoutPlan() throws Exception {
         Object actual = test.processRequest(getInputJson());
         Assert.assertEquals(getExpectedJson(), Json.toJson(actual));
@@ -24,7 +22,7 @@ public class PostServletTest {
 
     private String getExpectedJson() {
         return ("{" +
-                "\"speech\":\"This will be fun:\"," +
+                "\"speech\":\"This will be fun:\\nAll you need is a small spot where you fit in while lying. You\\u0027ll also need a chair, bench or table. Just follow the list and ask me if you need to know anything. An AMRAP is done as follows: You got a list of some exercises and the number of reps below. After completing all one by one, you\\u0027ve got 1 round done. Complete as many rounds and reps as possible in the time given. Do breaks when needed. \"," +
                 "\"displayText\":\"displayText\"," +
                 "\"source\":\"JettyChatBot\"" +
                 "}");
