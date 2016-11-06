@@ -6,7 +6,6 @@ import ChatBot.main.usecasefamilies.requestWorkout.interactors.RequestWorkout_Re
 import adapters.Json;
 import com.google.gson.Gson;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.jusecase.UsecaseTest;
 import org.jusecase.builders.Builder;
@@ -29,12 +28,11 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
 
 
     @Test
-    @Ignore
     public void requestWorkout_given30minHome_returnsWorkoutPlan() {
         givenRequest(a(request()));
         whenRequestIsExecuted();
 
-        thenResponseIs(a(response()));
+        thenResponseIs(a(response().withWorkout("")));
     }
 
     private ResponseBuilder response() {
@@ -71,15 +69,25 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
         public RequestWorkout_Request build() {
             return RequestWorkout_Request;
         }
+
+
     }
 
     private class ResponseBuilder implements Builder<RequestWorkout_Response> {
-        private final String workout = "\nAll you need is a small spot where you fit in while lying. You'll also need a chair, bench or table. Just follow the list and ask me if you need to know anything. \n10 mins Warmup \n2 minutes Jumping Jack\n15 Burpees\n\nStretching http://bit.ly/2cA9txv \n20 mins AMRAP \n20 Mountain Climbers (per leg)\n15 Dips\n12 Air Squats\n9 Push-Ups\n7 Sit-Ups\n5 Squat Jumps";
-        private RequestWorkout_Response requestWorkoutResponse =
-                new RequestWorkout_Response("This will be fun:" + workout, "displayText");
+
+        private String atFirst = "An AMRAP is done as follows: You got a list of some exercises and the number of reps below. After completing all one by one, you've got 1 round done. Complete as many rounds and reps as possible in the time given. Do breaks when needed. ";
+        private String atDips = "You'll also need a chair, bench or table.";
+        private String description = "\nAll you need is a small spot where you fit in while lying. " + atDips + " Just follow the list and ask me if you need to know anything. " + atFirst;
+        private String workout = "\n10 mins Warmup \n2 minutes Jumping Jack\n15 Burpees\n\nStretching http://bit.ly/2cA9txv \n20 mins AMRAP \n20 Mountain Climbers (per leg)\n15 Dips\n12 Air Squats\n9 Push-Ups\n7 Sit-Ups\n5 Squat Jumps";
+        private String fulfillment = "This will be fun:";
 
         public RequestWorkout_Response build() {
-            return requestWorkoutResponse;
+            return new RequestWorkout_Response(fulfillment + description + workout, "displayText");
+        }
+
+        ResponseBuilder withWorkout(String workout) {
+            this.workout = workout;
+            return this;
         }
 
 
