@@ -1,6 +1,6 @@
 # JettyChatbot
 
-### Run
+### Test
 	http://m.me/heybuddyfitness
 	https://jettyheybuddy.herokuapp.com
 
