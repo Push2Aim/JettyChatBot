@@ -1,8 +1,8 @@
 # JettyChatbot
 
 # Test 🤖
-	[On Facebook](http://m.me/heybuddyfitness)
-	[In browser](https://jettyheybuddy.herokuapp.com)
+[On Facebook](http://m.me/heybuddyfitness)
+[In browser](https://jettyheybuddy.herokuapp.com)
 
 ## Deploy to:
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
