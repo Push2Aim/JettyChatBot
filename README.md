@@ -1,6 +1,6 @@
 # JettyChatbot
 
-# Test 🤖
+# Try the 🤖
 [On Facebook](http://m.me/heybuddyfitness)
 
 [In browser](https://jettyheybuddy.herokuapp.com)
