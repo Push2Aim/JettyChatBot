@@ -22,7 +22,7 @@ public class PostServletTest {
 
     private String getExpectedJson() {
         return ("{" +
-                "\"speech\":\"This will be fun:\\nAll you need is a small spot where you fit in while lying. You\\u0027ll also need a chair, bench or table. Just follow the list and ask me if you need to know anything. An AMRAP is done as follows: You got a list of some exercises and the number of reps below. After completing all one by one, you\\u0027ve got 1 round done. Complete as many rounds and reps as possible in the time given. Do breaks when needed. \"," +
+                "\"speech\":\"This will be fun:\\nAll you need is a small spot where you fit in while lying. You\\u0027ll also need a chair, bench or table. Just follow the list and ask me if you need to know anything. An AMRAP is done as follows: You got a list of some exercises and the number of reps below. After completing all one by one, you\\u0027ve got 1 round done. Complete as many rounds and reps as possible in the time given. Do breaks when needed. \\n10 mins Warmup \\n2 minutes Jumping Jack \\n15 Burpees \\nStretching http://bit.ly/2cA9txv \\n20 mins AMRAP \\n20 Mountain Climbers (per leg) \\n15 Dips \\n12 Air Squats \\n9 Push-Ups \\n7 Sit-Ups \\n5 Squat Jumps\"," +
                 "\"displayText\":\"displayText\"," +
                 "\"source\":\"JettyChatBot\"" +
                 "}");
