@@ -8,9 +8,9 @@ public class RequestWorkout_Interactor implements Usecase<RequestWorkout_Request
         ResultGenerator generator = new ResultGenerator();
 
         String sessionId = request.sessionId;
-        String speech = request.resultFulfillmentSpeech +
+        String speech = "";
+        String displayText = request.resultFulfillmentSpeech +
                 generator.actionResult(request.resultAction, request.parameters);
-        String displayText = "displayText";
 
 
         return new RequestWorkout_Response(speech, displayText);

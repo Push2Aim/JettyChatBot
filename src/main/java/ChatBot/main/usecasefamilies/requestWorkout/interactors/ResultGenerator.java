@@ -54,17 +54,22 @@ class ResultGenerator {
     }
 
     private String printWorkout(JSONObject workout) {
-        //+ workout.get("exercises").map(printExercise).join("\n");
         JSONObject warmup = (JSONObject) workout.get("warmup");
         JSONObject exercises = (JSONObject) workout.get("workout");
-        //JSONObject cooldown = (JSONObject) workout.get("cooldown");
+        JSONObject cooldown = null;
 
-        return "\n" + printExcercises(warmup)
-                + " \n" + printExcercises(exercises);
+        if (workout.has("cooldown"))
+            cooldown = (JSONObject) workout.get("cooldown");
+
+        return printExercises(warmup)
+                + printExercises(exercises)
+                + printExercises(cooldown);
     }
 
-    private String printExcercises(JSONObject jsonObject) {
-        String out = (String) jsonObject.get("time");
+    private String printExercises(JSONObject jsonObject) {
+        if (jsonObject == null) return "";
+
+        String out = "\n" + jsonObject.get("time");
         JSONArray workoutsList = (JSONArray) jsonObject.get("exercises");
         for (Object exe : workoutsList) {
             JSONObject jsonWorkout = (JSONObject) exe;
