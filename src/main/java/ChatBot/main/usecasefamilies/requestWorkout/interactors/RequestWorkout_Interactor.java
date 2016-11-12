@@ -5,9 +5,9 @@ import org.jusecase.Usecase;
 public class RequestWorkout_Interactor implements Usecase<RequestWorkout_Request, RequestWorkout_Response> {
 
     public RequestWorkout_Response execute(RequestWorkout_Request request) {
-        ResultGenerator generator = new ResultGenerator();
-
         String sessionId = request.sessionId;
+        ResultGenerator generator = new ResultGenerator(sessionId);
+
         String speech = "";
         String displayText = request.resultFulfillmentSpeech +
                 generator.actionResult(request.resultAction, request.parameters);

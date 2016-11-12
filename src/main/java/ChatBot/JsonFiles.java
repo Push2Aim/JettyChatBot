@@ -1674,9 +1674,9 @@ public class JsonFiles {
                 "\n" +
                 "{\n" +
                 "    \"locations\": \"gym\",\n" +
-                "    \"duration\": \"40 mins Warmup\",\n" +
+                "    \"duration\": 40,\n" +
                 "    \"warmup\":{\n" +
-                "        \"time\": 10,\n" +
+                "        \"time\": 10 mins Warmup,\n" +
                 "        \"exercises\": [\n" +
                 "        {\n" +
                 "            \"name\": \"2 minutes Rower\",\n" +
