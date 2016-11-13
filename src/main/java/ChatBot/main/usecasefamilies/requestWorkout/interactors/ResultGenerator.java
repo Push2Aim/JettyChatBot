@@ -1,23 +1,21 @@
 package ChatBot.main.usecasefamilies.requestWorkout.interactors;
 
-import ChatBot.JsonFiles;
-import adapters.Json;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 class ResultGenerator {
-    private final ArrayList<String> sessionIdList = new ArrayList<>();
-    private final String sessionId;
+    private JSONObject detailsJson;
+    private JSONObject workoutsJson;
+    private boolean isFirstUser;
 
-    ResultGenerator(String sessionId) {
-        this.sessionId = sessionId;
+    ResultGenerator(String sessionId, JSONObject detailsJson, JSONObject workoutsJson, boolean isFirstUser) {
+        this.detailsJson = detailsJson;
+        this.workoutsJson = workoutsJson;
+        this.isFirstUser = isFirstUser;
     }
 
     String actionResult(String resultAction, Map<String, Object> parameters) {
@@ -28,15 +26,12 @@ class ResultGenerator {
     private String generateWorkout(Map<String, Object> parameters) {
         String location = extractLocation(parameters);
         Map<String, Object> duration = extractDuration(parameters);
-
-        JSONObject details = new Json(JsonFiles.get("details.json"));
-        JSONObject workouts = new Json(JsonFiles.get("workout.json"));
-        JSONArray workoutsList = (JSONArray) workouts.get("workouts");
+        JSONArray workoutsList = (JSONArray) workoutsJson.get("workouts");
         ArrayList<JSONObject> workout = filterLocation(workoutsList, location);
         workout = filterDuration(workout, duration);
 
         JSONObject finalWorkout = workout.get(0);
-        return printDetails(location, finalWorkout, details)
+        return printDetails(location, finalWorkout, detailsJson)
                 + printWorkout(finalWorkout);
     }
 
@@ -117,7 +112,7 @@ class ResultGenerator {
                 includesDips(workout) && !isInGym(location) ?
                         atLocation.getString("@dips") : "");
         description = description.replace("@first",
-                isFirstUser(sessionId) ? atLocation.getString("@first") : "");
+                isFirstUser ? atLocation.getString("@first") : "");
 
         return "\n" + description;
     }
@@ -130,31 +125,4 @@ class ResultGenerator {
         return location.equals("gym");
     }
 
-    private boolean isFirstUser(String sessionId) {
-        if (sessionIdList.contains(sessionId))
-            return false;
-        else {
-            sessionIdList.add(sessionId);
-            return true;
-        }
-    }
-
-    private Json readFile(String filePath) {
-        Json jsonObject = null;
-        try {
-            File file = new File(filePath);
-            if (!file.exists()) {
-                System.err.println("File not exists: " + file.getAbsolutePath());
-                System.err.println("File not exists: " + file.getCanonicalPath());
-                System.err.println("File not exists: " + file.getPath());
-            } else {
-                jsonObject = Json.parsReader(new BufferedReader(new FileReader(file)));
-            }
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
-        }
-
-        return jsonObject;
-
-    }
 }

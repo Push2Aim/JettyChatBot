@@ -10,6 +10,8 @@ import org.junit.Test;
 import org.jusecase.UsecaseTest;
 import org.jusecase.builders.Builder;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 import static org.jusecase.Builders.a;
 
@@ -24,6 +26,7 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
     @Before
     public void setUp() {
         usecase = new RequestWorkout_Interactor();
+        RequestWorkout_Interactor.sessionIdList = new ArrayList<>();
     }
 
 
@@ -60,6 +63,14 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
     }
 
     @Test
+    public void requestWorkout_givenFulfillment_returnsDetailsWithFulfillment() {
+        givenRequest(a(request().withFulfillment("Fulfill this:")));
+        whenRequestIsExecuted();
+
+        thenResponseIs(a(response().withFulfillment("Fulfill this:")));
+    }
+
+    @Test
     public void requestWorkout_given60minOutdoor_givenWithDips_givenFirstTime_returnsDetailsWarmupWorkoutCooldown() {
         givenRequest(a(request().withDuration(60, "min").withLocation("outdoor")));
         whenRequestIsExecuted();
@@ -87,6 +98,18 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
                 .withWorkout("\n2 mins Warmup \n1 minute Jumping Jack \n1 minute Stretching http://bit.ly/2cjLTke\n3 mins AMRAP \n5 Air Squats \n5 Push-Ups \n5 Sit-Ups")));
     }
 
+    @Test
+    public void requestWorkout_givenSecondTime_returnsDetailsWithoutAtFirst() {
+        givenRequest(a(request()));
+        whenRequestIsExecuted();
+
+        givenRequest(a(request()));
+        whenRequestIsExecuted();
+
+        thenResponseIs(a(response().withDescription("\nAll you need is a small spot where you fit in while lying. You\u0027ll also need a chair, bench or table. Just follow the list and ask me if you need to know anything. ")
+        ));
+    }
+
     private ResponseBuilder response() {
         return new ResponseBuilder();
     }
@@ -100,6 +123,7 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
         private String durationUnit = "min";
         private String duration;
         private String location = "home";
+        private String fulfillment = "This will be fun:";
 
         private String getDuration() {
             return "{\n" +
@@ -121,7 +145,7 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
                     "      \"location\": \"" + location + "\",\n" +
                     "    },\n" +
                     "    \"fulfillment\": {\n" +
-                    "      \"speech\": \"This will be fun:\"\n" +
+                    "      \"speech\": \"" + fulfillment + "\"\n" +
                     "    }\n" +
                     "  },\n" +
                     "  \"sessionId\": \"5e38aa19-7ec2-4546-a07a-35369d95b298\"\n" +
@@ -142,6 +166,11 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
 
         RequestBuilder withDuration(String duration) {
             this.duration = duration;
+            return this;
+        }
+
+        RequestBuilder withFulfillment(String fulfillment) {
+            this.fulfillment = fulfillment;
             return this;
         }
     }
