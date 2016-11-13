@@ -110,6 +110,14 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
         ));
     }
 
+    @Test
+    public void requestWorkout_givenLocationWork_returnsWithoutForHome() {
+        givenRequest(a(request().withLocation("Work")));
+        whenRequestIsExecuted();
+
+        thenResponseIs(a(response()));
+    }
+
     private ResponseBuilder response() {
         return new ResponseBuilder();
     }

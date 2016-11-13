@@ -12,7 +12,7 @@ class ResultGenerator {
     private JSONObject workoutsJson;
     private boolean isFirstUser;
 
-    ResultGenerator(String sessionId, JSONObject detailsJson, JSONObject workoutsJson, boolean isFirstUser) {
+    ResultGenerator(JSONObject detailsJson, JSONObject workoutsJson, boolean isFirstUser) {
         this.detailsJson = detailsJson;
         this.workoutsJson = workoutsJson;
         this.isFirstUser = isFirstUser;
@@ -51,7 +51,15 @@ class ResultGenerator {
 
     private String extractLocation(Map<String, Object> parameters) {
         String location = String.valueOf(parameters.get("location"));
-        return location.isEmpty() ? "home" : location;
+        switch (location) {
+            case "home":
+            case "gym":
+            case "outdoor":
+                return location;
+
+            default:
+                return "home";
+        }
     }
 
     private ArrayList<JSONObject> filterDuration(ArrayList<JSONObject> workouts, Map<String, Object> durationMap) {
