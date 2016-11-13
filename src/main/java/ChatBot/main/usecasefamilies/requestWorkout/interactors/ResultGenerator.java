@@ -36,7 +36,8 @@ class ResultGenerator {
         workout = filterDuration(workout, duration);
 
         JSONObject finalWorkout = workout.get(0);
-        return printDetails(location, finalWorkout, details) + printWorkout(finalWorkout);
+        return printDetails(location, finalWorkout, details)
+                + printWorkout(finalWorkout);
     }
 
     private Map<String, Object> extractDuration(Map<String, Object> parameters) {
@@ -75,9 +76,9 @@ class ResultGenerator {
         ArrayList<JSONObject> out = new ArrayList<>();
         for (Object workout : workouts) {
             JSONObject jsonWorkout = (JSONObject) workout;
-            if (String.valueOf(jsonWorkout.get("locations")).contains(location)) out.add(jsonWorkout);
+            if (String.valueOf(jsonWorkout.get("locations")).contains(location))
+                out.add(jsonWorkout);
         }
-
         return out;
     }
 
@@ -112,8 +113,11 @@ class ResultGenerator {
         JSONObject atLocation = (JSONObject) details.get(location);
         String description = (String) atLocation.get("description");
 
-        description = description.replace("@dips", (includesDips(workout) && !isInGym(location)) ? atLocation.getString("@dips") : "");
-        description = description.replace("@first", isFirstUser(sessionId) ? atLocation.getString("@first") : "");
+        description = description.replace("@dips",
+                includesDips(workout) && !isInGym(location) ?
+                        atLocation.getString("@dips") : "");
+        description = description.replace("@first",
+                isFirstUser(sessionId) ? atLocation.getString("@first") : "");
 
         return "\n" + description;
     }
