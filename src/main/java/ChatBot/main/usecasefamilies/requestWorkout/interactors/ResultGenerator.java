@@ -8,9 +8,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 class ResultGenerator {
-    private JSONObject detailsJson;
-    private JSONObject workoutsJson;
-    private boolean isFirstUser;
+    private final JSONObject detailsJson;
+    private final JSONObject workoutsJson;
+    private final boolean isFirstUser;
 
     ResultGenerator(JSONObject detailsJson, JSONObject workoutsJson, boolean isFirstUser) {
         this.detailsJson = detailsJson;
@@ -39,6 +39,7 @@ class ResultGenerator {
         Object duration = parameters.get("duration");
         if (String.valueOf(duration).isEmpty()) return getDefaultDuration();
 
+        //noinspection unchecked
         return (Map<String, Object>) duration;
     }
 

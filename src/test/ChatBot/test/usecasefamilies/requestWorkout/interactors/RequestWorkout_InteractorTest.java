@@ -5,6 +5,7 @@ import ChatBot.main.usecasefamilies.requestWorkout.interactors.RequestWorkout_Re
 import ChatBot.main.usecasefamilies.requestWorkout.interactors.RequestWorkout_Response;
 import adapters.Json;
 import com.google.gson.Gson;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.jusecase.UsecaseTest;
@@ -26,9 +27,13 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
     @Before
     public void setUp() {
         usecase = new RequestWorkout_Interactor();
-        RequestWorkout_Interactor.sessionIdList = new ArrayList<>();
     }
 
+    @After
+    public void tearDown() throws Exception {
+        RequestWorkout_Interactor.sessionIdList = new ArrayList<>();
+
+    }
 
     @Test
     public void requestWorkout_givenNoLocation_givenWithDips_givenFirstTime_returnsWorkoutFor30minAtHome() {

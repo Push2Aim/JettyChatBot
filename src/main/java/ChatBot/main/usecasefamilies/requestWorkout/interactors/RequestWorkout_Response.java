@@ -10,12 +10,13 @@ package ChatBot.main.usecasefamilies.requestWorkout.interactors;
  * Example:
  * "contextOut": [{"name":"weather", "lifespan":2, "parameters":{"city":"Rome"}}]
  */
+@SuppressWarnings("unused")
 public class RequestWorkout_Response {
-    String speech;
-    String displayText;
+    final String speech;
+    final String displayText;
+    final String source = "JettyChatBot";
     Object data;
     Object contextOut;
-    String source = "JettyChatBot";
 
     public RequestWorkout_Response(String speech, String displayText) {
         this.speech = speech;
