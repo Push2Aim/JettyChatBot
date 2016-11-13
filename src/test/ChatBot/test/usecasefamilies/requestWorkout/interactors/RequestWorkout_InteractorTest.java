@@ -28,7 +28,7 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
 
 
     @Test
-    public void requestWorkout_givenNoLocation_givenFirstTime_returnsWorkoutFor30minAtHome() {
+    public void requestWorkout_givenNoLocation_givenWithDips_givenFirstTime_returnsWorkoutFor30minAtHome() {
         givenRequest(a(request().withLocation("")));
         whenRequestIsExecuted();
 
@@ -36,7 +36,7 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
     }
 
     @Test
-    public void requestWorkout_givenNoDuration_givenFirstTime_returnsWorkoutFor30minAtHome() {
+    public void requestWorkout_givenNoDuration_givenWithDips_givenFirstTime_returnsWorkoutFor30minAtHome() {
         givenRequest(a(request().withDuration("\"\"")));
         whenRequestIsExecuted();
 
@@ -44,7 +44,7 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
     }
 
     @Test
-    public void requestWorkout_givenNothing_givenFirstTime_returnsWorkoutFor30minAtHome() {
+    public void requestWorkout_givenNothing_givenWithDips_givenFirstTime_returnsWorkoutFor30minAtHome() {
         givenRequest(a(request().withDuration("\"\"").withLocation("")));
         whenRequestIsExecuted();
 
@@ -52,7 +52,7 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
     }
 
     @Test
-    public void requestWorkout_given30minHome_givenFirstTime_returnsDetailsWarmupWorkout() {
+    public void requestWorkout_given30minHome_givenWithDips_givenFirstTime_returnsDetailsWarmupWorkout() {
         givenRequest(a(request()));
         whenRequestIsExecuted();
 
@@ -60,7 +60,7 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
     }
 
     @Test
-    public void requestWorkout_given60minOutdoor_givenFirstTime_returnsDetailsWarmupWorkoutCooldown() {
+    public void requestWorkout_given60minOutdoor_givenWithDips_givenFirstTime_returnsDetailsWarmupWorkoutCooldown() {
         givenRequest(a(request().withDuration(60, "min").withLocation("outdoor")));
         whenRequestIsExecuted();
 
@@ -76,6 +76,15 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
 
         thenResponseIs(a(response().withDescription("\nAll you need is a Bench Press bench with your chosen weight on the barbell plus some light dumbbells. Wanna scale it up? Reserve the next Squat rack with your chosen weight on the barbell, and the next dip bar, also for the Leg Raises. Just follow the list and ask me if you need anything. An AMRAP is done as follows: You got a list of some exercises and the number of reps below. After completing all one by one, you've got 1 round done. Complete as many rounds and reps as possible in the time given. Do breaks when needed.")
                 .withWorkout("\n5 mins Warmup \n2 minutes Rower \n3 minutes Stretching http://bit.ly/2cA9gKH\n10 mins AMRAP \n10 Bench Presses \n10 Squats \n10 Dumbbell Shoulder Presses \n10 Leg Raises")));
+    }
+
+    @Test
+    public void requestWorkout_given5min_givenNoDips_givenFirstTime_returnsDetailsWithoutDipsTips() {
+        givenRequest(a(request().withDuration(5, "min")));
+        whenRequestIsExecuted();
+
+        thenResponseIs(a(response().withDescription("\nAll you need is a small spot where you fit in while lying. Just follow the list and ask me if you need to know anything. An AMRAP is done as follows: You got a list of some exercises and the number of reps below. After completing all one by one, you've got 1 round done. Complete as many rounds and reps as possible in the time given. Do breaks when needed. ")
+                .withWorkout("\n2 mins Warmup \n1 minute Jumping Jack \n1 minute Stretching http://bit.ly/2cjLTke\n3 mins AMRAP \n5 Air Squats \n5 Push-Ups \n5 Sit-Ups")));
     }
 
     private ResponseBuilder response() {

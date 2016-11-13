@@ -14,13 +14,13 @@ public class JsonFiles {
     private static String loadDetailsJson() {
         return "{\n" +
                 "    \"home\": {\n" +
-                "        \"description\": \"All you need is a small spot where you fit in while lying. @dips Just follow the list and ask me if you need to know anything. @first\",\n" +
-                "        \"@dips\": \"You'll also need a chair, bench or table.\",\n" +
+                "        \"description\": \"All you need is a small spot where you fit in while lying. @dipsJust follow the list and ask me if you need to know anything. @first\",\n" +
+                "        \"@dips\": \"You'll also need a chair, bench or table. \",\n" +
                 "        \"@first\": \"An AMRAP is done as follows: You got a list of some exercises and the number of reps below. After completing all one by one, you've got 1 round done. Complete as many rounds and reps as possible in the time given. Do breaks when needed. \",\n" +
                 "    },\n" +
                 "    \"outdoor\": {\n" +
-                "        \"description\": \"All you need is an spot where you can run and have no problem lying down. @dips Just follow the list and ask me if you need anything. @first\",\n" +
-                "        \"@dips\": \"You'll also need a chair, bench or table.\",\n" +
+                "        \"description\": \"All you need is an spot where you can run and have no problem lying down. @dipsJust follow the list and ask me if you need anything. @first\",\n" +
+                "        \"@dips\": \"You'll also need a chair, bench or table. \",\n" +
                 "        \"@first\": \"An AMRAP is done as follows: You got a list of some exercises and the number of reps below. After completing all one by one, you've got 1 round done. Complete as many rounds and reps as possible in the time given. Do breaks when needed. \",\n" +
                 "    },\n" +
                 "    \"gym\": {\n" +

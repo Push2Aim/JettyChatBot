@@ -112,7 +112,7 @@ class ResultGenerator {
         JSONObject atLocation = (JSONObject) details.get(location);
         String description = (String) atLocation.get("description");
 
-        description = description.replace("@dips", includesDips(workout) || !isInGym(location) ? atLocation.getString("@dips") : ""); //TODO filter dips in Workout || not in gym
+        description = description.replace("@dips", (includesDips(workout) && !isInGym(location)) ? atLocation.getString("@dips") : "");
         description = description.replace("@first", isFirstUser(sessionId) ? atLocation.getString("@first") : "");
 
         return "\n" + description;
