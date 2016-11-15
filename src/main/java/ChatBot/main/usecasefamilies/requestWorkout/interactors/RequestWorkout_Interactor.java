@@ -20,9 +20,9 @@ public class RequestWorkout_Interactor implements Usecase<RequestWorkout_Request
         Json workoutsJson = new Json(JsonFiles.get("workout.json"));
         ResultGenerator generator = new ResultGenerator(detailsJson, workoutsJson, isFirstUser(sessionId));
 
-        String displayText = request.resultFulfillmentSpeech +
+        String speech = request.resultFulfillmentSpeech +
                 generator.actionResult(request.resultAction, request.parameters);
-        String speech = displayText;
+        String displayText = "";
 
 
         return new RequestWorkout_Response(speech, displayText);

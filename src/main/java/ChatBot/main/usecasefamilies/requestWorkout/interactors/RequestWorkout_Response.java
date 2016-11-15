@@ -1,7 +1,6 @@
 package ChatBot.main.usecasefamilies.requestWorkout.interactors;
 
 import adapters.Json;
-import org.json.JSONObject;
 
 /**
  * NAME 	    TYPE	                    DESCRIPTION
@@ -18,14 +17,13 @@ public class RequestWorkout_Response {
     final String speech;
     final String displayText;
     final String source = "JettyChatBot";
-    final JSONObject messages;
     Object data;
     Object contextOut;
 
     public RequestWorkout_Response(String speech, String displayText) {
         this.speech = speech;
         this.displayText = displayText;
-        this.messages = new Json("{\n" +
+        this.data = new Json("{\n" +
                 "          \"payload\": {\n" +
                 "            \"facebook\": {\n" +
                 "              \"attachment\": {\n" +
