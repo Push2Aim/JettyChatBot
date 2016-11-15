@@ -22,10 +22,8 @@ public class RequestWorkout_Interactor implements Usecase<RequestWorkout_Request
 
         String speech = request.resultFulfillmentSpeech +
                 generator.actionResult(request.resultAction, request.parameters);
-        String displayText = "";
 
-
-        return new RequestWorkout_Response(speech, displayText);
+        return new RequestWorkout_Response(speech);
     }
 
     private boolean isFirstUser(String sessionId) {

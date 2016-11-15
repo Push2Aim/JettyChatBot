@@ -15,14 +15,12 @@ import adapters.Json;
 @SuppressWarnings("unused")
 public class RequestWorkout_Response {
     final String speech;
-    final String displayText;
     final String source = "JettyChatBot";
     Object data;
     Object contextOut;
 
-    public RequestWorkout_Response(String speech, String displayText) {
+    public RequestWorkout_Response(String speech) {
         this.speech = speech;
-        this.displayText = displayText;
         this.data = new Json("{\n" +
                 "          \"payload\": {\n" +
                 "            \"facebook\": {\n" +
