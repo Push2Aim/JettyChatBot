@@ -1,7 +1,5 @@
 package ChatBot.main.usecasefamilies.requestWorkout.interactors;
 
-import adapters.Json;
-
 /**
  * NAME 	    TYPE	                    DESCRIPTION
  * speech         String                      Voice response to the request.
@@ -14,26 +12,13 @@ import adapters.Json;
  */
 @SuppressWarnings("unused")
 public class RequestWorkout_Response {
-    final String speech;
     final String source = "JettyChatBot";
+    String speech;
     Object data;
     Object contextOut;
 
     public RequestWorkout_Response(String speech) {
         this.speech = speech;
-        this.data = new Json("{\n" +
-                "          \"payload\": {\n" +
-                "            \"facebook\": {\n" +
-                "              \"attachment\": {\n" +
-                "                \"type\": \"file\",\n" +
-                "                \"payload\": {\n" +
-                "                  \"url\": \"https://raw.githubusercontent.com/Push2Aim/JettyChatBot/master/src/main/webapp/content%20pillar%20system%202.png\"\n" +
-                "                }\n" +
-                "              }\n" +
-                "            }\n" +
-                "          },\n" +
-                "          \"type\": 4\n" +
-                "        }");
+        this.data = new Data();
     }
-
 }

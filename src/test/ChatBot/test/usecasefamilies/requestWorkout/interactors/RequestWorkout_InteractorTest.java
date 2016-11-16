@@ -201,7 +201,7 @@ public class RequestWorkout_InteractorTest extends UsecaseTest<RequestWorkout_Re
         }
 
         public RequestWorkout_Response build() {
-            return new RequestWorkout_Response("", fulfillment + description + workout);
+            return new RequestWorkout_Response(fulfillment + description + workout);
         }
 
         ResponseBuilder withFulfillment(String fulfillment) {
