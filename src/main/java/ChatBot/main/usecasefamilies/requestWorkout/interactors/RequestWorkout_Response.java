@@ -17,8 +17,12 @@ public class RequestWorkout_Response {
     Object data;
     Object contextOut;
 
+    String displayText;
+
     public RequestWorkout_Response(String speech) {
         this.speech = speech;
         this.data = new Data();
+
+        displayText = speech;
     }
 }
