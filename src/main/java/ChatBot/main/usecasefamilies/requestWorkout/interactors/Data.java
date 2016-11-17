@@ -1,7 +1,7 @@
 package ChatBot.main.usecasefamilies.requestWorkout.interactors;
 
 class Data {
-    Message message = new Message();
+    Attachment attachment = new Attachment();
 
     //Payload payload = new Payload();
     //int type = 4;
@@ -15,12 +15,13 @@ class Data {
     }
 
     private class Attachment {
-        String type = "file";
+        String type = "image";
         Content payload = new Content();
     }
 
     private class Content {
         String url = "https://raw.githubusercontent.com/Push2Aim/JettyChatBot/master/src/main/webapp/content%20pillar%20system%202.png";
+        boolean is_reusable = true;
     }
 }
 
