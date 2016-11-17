@@ -1,7 +1,7 @@
 package ChatBot.main.usecasefamilies.requestWorkout.interactors;
 
 class Data {
-    Attachment attachment = new Attachment();
+    Message message = new Message();
 
     //Payload payload = new Payload();
     //int type = 4;
