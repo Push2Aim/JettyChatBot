@@ -11,7 +11,7 @@
     <iframe
             width="100%"
             height="100%"
-            src="https://console.api.ai/api-client/demo/embedded/1d5aa249-8645-4b7a-a473-9562f2a9af2e">
+            src="https://console.api.ai/api-client/demo/embedded/bd872b52-3b14-4fac-b6c3-9c4e64c6fbf0">
     </iframe>
 
 </div>
