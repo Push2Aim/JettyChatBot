@@ -1,7 +1,7 @@
 package ChatBot.main.usecasefamilies.requestWorkout.interactors;
 
 /**
- * NAME 	    TYPE	                    DESCRIPTION
+ * NAME 	      TYPE	                      DESCRIPTION
  * speech         String                      Voice response to the request.
  * displayText    String                      Text displayed on the user device screen.
  * data           Dictionary of objects       Additional data required for performing the action on the client side. The data is sent to the client in the original form and is not processed by Api.ai.
@@ -21,7 +21,7 @@ public class RequestWorkout_Response {
 
     public RequestWorkout_Response(String speech) {
         this.speech = speech;
-        // this.data = new Data();
+        this.data = new Data();
 
         displayText = speech;
     }
