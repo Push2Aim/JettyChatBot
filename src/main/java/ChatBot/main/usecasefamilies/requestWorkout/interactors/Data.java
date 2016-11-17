@@ -1,11 +1,10 @@
 package ChatBot.main.usecasefamilies.requestWorkout.interactors;
 
 class Data {
-    Payload payload = new Payload();
     Attachment attachment = new Attachment();
 
+    //Payload payload = new Payload();
     //int type = 4;
-    //private RequestWorkout_Response requestWorkout_response;
 
     private class Payload {
         Message facebook = new Message();
