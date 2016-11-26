@@ -4,7 +4,7 @@ class Data {
     FaceBook facebook = new FaceBook();
 
     private class FaceBook {
-        String text = "Archling ;P";
+        String text = "Arschling ;P";
     }
 
 
