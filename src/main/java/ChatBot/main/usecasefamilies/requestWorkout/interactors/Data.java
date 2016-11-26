@@ -1,7 +1,14 @@
 package ChatBot.main.usecasefamilies.requestWorkout.interactors;
 
 class Data {
-    Attachment attachment = new Attachment();
+    FaceBook facebook = new FaceBook();
+
+    private class FaceBook {
+        String text = "Archling ;P";
+    }
+
+
+    //Attachment attachment = new Attachment();
 
     //Payload payload = new Payload();
     //int type = 4;
@@ -25,3 +32,26 @@ class Data {
     }
 }
 
+/*
+{
+   "speech":"some text",
+   "displayText":"some text",
+   "data":{
+      "facebook":{
+         "text":{
+             "some text"
+         }
+      }
+  }
+
+
+  "data": {
+        "attachment": {
+          "type": "image",
+          "payload": {
+            "url": "https://raw.githubusercontent.com/Push2Aim/JettyChatBot/master/src/main/webapp/content%20pillar%20system%202.png",
+            "is_reusable": true
+          }
+        }
+      }
+ */

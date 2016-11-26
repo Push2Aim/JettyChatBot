@@ -21,6 +21,14 @@ public class PostServlet extends HttpServlet {
 
         Object resp = processRequest(json);
 
+
+        //{“originalRequest”:{“source”:”facebook”,	“data”:{ … }}
+     /*   try {
+            FacebookAPI.sendPost("","Hi Arschling!");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }*/
+
         sendResponse(response, resp);
     }
 
@@ -32,7 +40,8 @@ public class PostServlet extends HttpServlet {
     private Json receiveRequest(HttpServletRequest request) throws IOException {
         System.out.println("POST content: " + request.getContentType());
         Json json = Json.parsReader(request.getReader());
-        System.out.println("POST request: " + json.toString().replace(",", ",\n").replace("{", "{\n\t"));
+        System.out.println("POST request: " + json.toString()
+                .replace(",", ",\n").replace("{", "{\n\t"));
         return json;
     }
 
