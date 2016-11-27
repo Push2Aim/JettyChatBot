@@ -4,7 +4,7 @@ class Data {
     FaceBook facebook = new FaceBook();
 
     Data(String message) {
-        facebook.text = message.substring(0, 300);
+        facebook.text = message.substring(0, 400);
     }
 
     private class FaceBook {
