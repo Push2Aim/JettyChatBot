@@ -1,17 +1,13 @@
 package ChatBot.main.usecasefamilies.requestWorkout.interactors;
 
 class Data {
-    FaceBook facebook;
+    FaceBook facebook = new FaceBook();
 
     Data(String message) {
-        facebook = new FaceBook(message);
+        facebook.text = "Under construction";
     }
 
     private class FaceBook {
         String text;
-
-        public FaceBook(String text) {
-            this.text = text;
-        }
     }
 }
