@@ -20,7 +20,7 @@ public class RequestWorkout_Response {
     String displayText;
 
     public RequestWorkout_Response(String speech) {
-        displayText = speech;
+        //displayText = speech;
         this.speech = speech;
         this.data = new Data(speech);
     }
