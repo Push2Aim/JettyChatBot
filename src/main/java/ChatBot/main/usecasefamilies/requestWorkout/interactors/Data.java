@@ -4,7 +4,7 @@ class Data {
     FaceBook facebook = new FaceBook();
 
     Data(String message) {
-        facebook.text = "Under construction";
+        facebook.text = message.substring(0, 100);
     }
 
     private class FaceBook {
