@@ -20,7 +20,7 @@ public class RequestWorkout_Response {
     String displayText;
 
     public RequestWorkout_Response(String speech) {
-        this.speech = speech;
-        this.data = new Data(speech);
+        this.speech = speech.substring(0, 300);
+        //this.data = new Data(speech);
     }
 }
